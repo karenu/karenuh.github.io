@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--un panel es un titulo con contenido-->
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<title>Proyecto Programación web</title>
+	 <!--Latest compiled and minified CSS -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/estilosp.css">
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="js/proyecto.js"></script>
+<link rel="stylesheet" href="css/estilosp.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+<body background="img/IMG_9155.jpg"><!--etiqueta que contieene todo nuestro código html-->
+	<header>
+	<img src="img/BONJOUR.gif">	
+	<nav >
+		<ul>
+		<li>
+		<button class="btn btn-info" id="btnInicio">Inicio <!-- btn es una clase, y success es subclase-->
+		<span class="glyphicon glyphicon-home" aria-hidden="true">
+		</span>
+
+		</button> 
+			</li>
+			<!--<li>
+				<a href="#seccionproyectos">Proyectos</a>
+			</li>-->
+	<li>
+		<button class="btn btn-warning" id="btnDatosPersonales"> <!-- btn es una clase, y success es subclase-->
+		Datos Personales	<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+	</button>
+	</li>
+
+	<li>
+		<button  class="btn btn-success" id="btnProyectos"> <!-- btn es una clase, y success es subclase-->
+		Proyectos	<span class="glyphicon glyphicon-education" aria-hidden="true"> </span>
+	</button>
+	</li>
+	<li>
+		<button class="btn btn-info" id="btnEmpleos"> <!-- btn es una clase, y success es subclase-->
+		  Empleos	<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span><!--Lo saco de la pag de bootstrap-->
+	</button>
+	</li>
+		
+</ul>
+	</nav>
+	<select name="menuCel" id="menuCel" onchange="inicioApp()" class="form-control">
+<option value="btnInicio">Inicio</option>
+<option value="btnDatosPersonales">Datos Personales</option>
+<option value="btnProyectos">Proyectos</option>
+<option value="btnEmpleos">Empleos</option>
+
+	</select>
+
+	</header>
+			
+			<section id="secciondatospersonales">
+				<article>
+				<h1> Datos Personales</h1>
+				<img src="img/IMG_0536.jpg">
+				</article>
+				<article id="art2">
+					Nombre: Karen Beatriz Urias Hernández <br>
+					
+					<br>Fecha de nacimiento: 22/Nov/1993 <br>
+					<br>Edad: 21 años. <br>
+					<br>Nacionalidad: Mexicana. 
+
+					 
+
+				</article>
+			</section>
+			
+			<section id="seccionproyectos">
+				<h1>Mis proyectos</h1>
+				<article id="spart1">
+					<img src="img/proyectokaty.jpg">
+					<br><br>
+					
+					Este proyecto fue realizado en la <br>
+					materia de Programación II. Fue un <br>
+					trabajo que realizé en equipo con<br>
+					mi compañera y amiga Mia Sainz. <br>
+					Utilizando visual estudio, lenguaje <br>
+					c# y sqlServer, el objetivo del <br>
+					proyecto fue crear formularios <br>
+					y enlazarlos conectarlos a la base <br>
+					de datos.
+					
+				</article>
+				<article id="spart2">
+				<img src="img/proyectobdd.jpg"><br><br>
+				<span class="spa2">
+				Este es un proyecto que realizé en 
+				la materia de Bases de Datos distribuidas.
+				El cual consistió en que en visual 
+				estudio y lenguaje c#, teniamos que enlazar
+				dichos formularios en la base de datos en 
+				sqlServer mediante procedimientos almacenados.
+</span>
+				</article>
+
+
+				<article>
+					<img src="img/pw.png"> <br><br>
+					Proyecto realizado en la clase de Programación 
+					Web. Lenguaje HTML 5, Hojas de estilos, JQuery 
+					y PHP. 
+					Altas, Bajas, Cambios y Consultas en la Base de 
+					datos.
+				</article>
+					<article>
+						<img src="img/webpizza.jpg"><br><br>
+						Proyecto realizado en la materia de Ingenieria
+						de software. Creación de una página web que 
+						debia permitir el envio de datos a una base de datos.
+					</article>
+			</section>
+
+			<section id="seccionempleos">
+				<h1>Empleos</h1>
+				<article >
+					<img src="img/IMG_2888.jpg">
+					<br>
+					<br>
+					Mi primer empleo lo obtuve en julio del 
+					año pasado. Trabajé en Cinemex Plaza Forum 
+					y estaba en el area de dulceria. Mi trabajo 
+					consistia en servir palomitas, hotdogs, nachos
+					refrescos, etc. Solamente trabajé un mes.
+				</article>
+				<article>
+					<img src="img/IMG_2514.jpg">
+					<br><br>
+					Mi segundo empleo: Estoy muy contenta porque
+					actualmente se me dio la oportunidad de trabajar
+					como maestra de francés en la Universidad Tecmilenio
+					Campus Culiacán. <br>
+					
+				</article>
+			</section>
+			<section >
+				<article id="video" width="-30" height="5">
+		<video controls preload autoplay loop>
+		<!--Loop-->
+		<source src="video/paris3minutes.mp4" type="video/mp4"/> 
+		<source src="video/paris3minutes.webm" type="video/webm"/> 
+
+	    Tu navegador no soporta esta característica :(
+	</video>
+	</article>
+			</section>
+</body>
+<footer id="footer">
+	<section><h1>Mis redes sociales</h1>
+<article><img src="img/fb.png"><br><h3 id="fb">fb.com/uriaskaren</h3></article>
+
+</article>
+<article><img src="img/twitter.png"><br><h3 id="tw">@uriask</h2></article>
+<article><img src="img/insta.png"><br><h3 id="insta">_kaarenb</h2></article>
+</section>
+</footer>
+</html>
